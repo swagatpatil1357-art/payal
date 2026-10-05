@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>User Registration</title>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+    }
+
+    body {
+        background: #f1f5f9;
+    }
+
+    header {
+        background: #111827;
+        color: white;
+        padding: 18px 7%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        color: #22c55e;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .container {
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form-box {
+        background: white;
+        width: 450px;
+        padding: 35px;
+        border-radius: 12px;
+        box-shadow: 0 5px 25px rgba(0,0,0,.1);
+    }
+
+    h2 {
+        text-align: center;
+        color: #16a34a;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        text-align: center;
+        color: #777;
+        margin-bottom: 25px;
+    }
+
+    label {
+        display: block;
+        margin-top: 15px;
+        margin-bottom: 7px;
+        font-weight: bold;
+    }
+
+    input, select {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 25px;
+        padding: 13px;
+        background: #22c55e;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    button:hover {
+        background: #15803d;
+    }
+
+    .link {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .link a {
+        color: #16a34a;
+        text-decoration: none;
+    }
+</style>
+
+</head> <body> <header> <div class="logo">FitLife</div>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+</nav>
+
+</header> <div class="container">
+<form class="form-box">
+
+    <h2>Create Account</h2>
+    <p class="subtitle">Register for your fitness journey</p>
+
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Email</label>
+    <input type="email" placeholder="Enter email" required>
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="Enter phone number">
+
+    <label>Password</label>
+    <input type="password" placeholder="Enter password" required>
+
+    <label>Confirm Password</label>
+    <input type="password" placeholder="Confirm password" required>
+
+    <label>Gender</label>
+    <select>
+        <option>Select Gender</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+    </select>
+
+    <button type="submit">Register</button>
+
+    <p class="link">
+        Already have an account?
+        <a href="login.html">Login</a>
+    </p>
+
+</form>
+
+</div> 
+</body> 
+</html>
+    
+</body>
+</html>

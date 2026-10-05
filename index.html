@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Fitness Management System</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#workout">Workout</a>
+            <a href="#diet">Diet</a>
+            <a href="#bmi">BMI Calculator</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Fitness Management System</h2>
+        <p>Stay Fit • Stay Healthy • Stay Strong</p>
+        <button onclick="showMessage()">Get Started</button>
+    </section>
+
+    <section id="workout">
+        <h2>Workout Plans</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Beginner</h3>
+                <p>Walking - 20 Minutes</p>
+                <p>Squats - 10 Reps</p>
+                <p>Push Ups - 10 Reps</p>
+            </div>
+
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p>Running - 30 Minutes</p>
+                <p>Squats - 20 Reps</p>
+                <p>Push Ups - 20 Reps</p>
+            </div>
+
+            <div class="card">
+                <h3>Advanced</h3>
+                <p>Running - 45 Minutes</p>
+                <p>Squats - 30 Reps</p>
+                <p>Push Ups - 30 Reps</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="diet">
+        <h2>Diet Plans</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Breakfast</h3>
+                <p>Oats, Fruits, Milk</p>
+            </div>
+
+            <div class="card">
+                <h3>Lunch</h3>
+                <p>Rice, Dal, Vegetables, Salad</p>
+            </div>
+
+            <div class="card">
+                <h3>Dinner</h3>
+                <p>Roti, Vegetables, Salad</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bmi">
+        <h2>BMI Calculator</h2>
+
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="height" placeholder="Height (cm)">
+
+        <button onclick="calculateBMI()">Calculate BMI</button>
+
+        <h3 id="result"></h3>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Fitness Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

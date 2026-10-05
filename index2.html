@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        background: #f4f7f6;
+        color: #222;
+    }
+
+    header {
+        background: #111827;
+        color: white;
+        padding: 18px 7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        font-size: 28px;
+        font-weight: bold;
+        color: #22c55e;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 25px;
+    }
+
+    nav a:hover {
+        color: #22c55e;
+    }
+
+    .hero {
+        min-height: 520px;
+        background: linear-gradient(
+            rgba(0,0,0,0.65),
+            rgba(0,0,0,0.65)
+        ),
+        linear-gradient(135deg, #16a34a, #111827);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    .hero-content {
+        max-width: 750px;
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        display: inline-block;
+        background: #22c55e;
+        color: white;
+        padding: 13px 25px;
+        border-radius: 6px;
+        text-decoration: none;
+        margin: 8px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background: #15803d;
+    }
+
+    .features {
+        padding: 60px 7%;
+        text-align: center;
+    }
+
+    .features h2 {
+        font-size: 35px;
+        margin-bottom: 35px;
+    }
+
+    .feature-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .card {
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+        color: #16a34a;
+        margin-bottom: 15px;
+    }
+
+    footer {
+        background: #111827;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    @media(max-width: 700px) {
+        header {
+            flex-direction: column;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        .feature-container {
+            grid-template-columns: 1fr;
+        }
+
+        .hero h1 {
+            font-size: 35px;
+        }
+    }
+</style>
+  
+
+</body>
+</html>

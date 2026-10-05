@@ -1,0 +1,51 @@
+<div class="auth-container">
+
+    <!-- Login Form -->
+    <div id="loginBox" class="auth-box">
+        <h2>Fitness Management System</h2>
+        <h3>Login</h3>
+
+        <form onsubmit="loginUser(event)">
+            <input type="email" id="loginEmail" placeholder="Email Address" required>
+
+            <input type="password" id="loginPassword" placeholder="Password" required>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p id="loginMessage"></p>
+
+        <p>
+            Don't have an account?
+            <a href="#" onclick="showRegister()">Register</a>
+        </p>
+    </div>
+
+    <!-- Registration Form -->
+    <div id="registerBox" class="auth-box" style="display: none;">
+        <h2>Fitness Management System</h2>
+        <h3>Registration</h3>
+
+        <form onsubmit="registerUser(event)">
+            <input type="text" id="registerName" placeholder="Full Name" required>
+
+            <input type="email" id="registerEmail" placeholder="Email Address" required>
+
+            <input type="password" id="registerPassword" placeholder="Password" required>
+
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <p id="registerMessage"></p>
+
+        <p>
+            Already have an account?
+            <a href="#" onclick="showLogin()">Login</a>
+        </p>
+    </div>
+
+</div>
+
+<script src="auth.js"></script>
